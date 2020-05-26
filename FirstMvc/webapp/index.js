@@ -1,20 +1,12 @@
 sap.ui.define([
-	"sap/m/Text","sap/m/Text","sap/ui/core/Icon"
+	"sap/ui/core/mvc/XMLView"
+], function (XMLView) {
+	"use strict";
 
-], function (Text, Text2,IconI) {
-	//"use strict";
+	XMLView.create({
+		viewName: "sap.ui.demo.walkthrough.view.App"
+	}).then(function (oView) {
+		oView.placeAt("content");
+	});
 
-	new Text({
-		text: "Hello World"
-	}).placeAt("content2");
-	
- 	new Text2({
- 		text: "El otro texto"
-	}).placeAt("content2");
-    
-    new IconI({
-    		src: "sap-icon://syringe",
-			size: "100px",
-			color: "#031E48"
-    }).placeAt("content3");
 });
