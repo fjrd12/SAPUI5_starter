@@ -1,0 +1,11 @@
+"sap.app": {
+ "dataSources": {
+   "": {
+     "uri": "/destinations/northwind/V2/Northwind/Northwind.svc/",
+     "type": "OData",
+     "settings": {
+       "odataVersion": "2.0"
+     }
+   }
+ }
+}
