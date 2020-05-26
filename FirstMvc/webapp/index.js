@@ -14,7 +14,7 @@ sap.ui.define([
     
     new IconI({
     		src: "sap-icon://syringe",
-			size: "20px",
+			size: "100px",
 			color: "#031E48"
     }).placeAt("content3");
 });
