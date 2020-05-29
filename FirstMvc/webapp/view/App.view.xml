@@ -1,5 +1,5 @@
 <mvc:View controllerName="sap.ui.demo.walkthrough.controller.App" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc">
-	<Button text="Say Hello" press=".onShowHello"/>
+	<Button text="{i18n>showHelloButtonText}" press=".onShowHello"/>
 	<Input value="{/recipient/name}" description="Hello {/recipient/name}" valueLiveUpdate="true" width="50px"/>
 	<Input value="{/recipient/lastname}" description="Name" valueLiveUpdate="true" width="50px"/>
 	<Input value="{/recipient/PO_CODE}" description="PO_CODE" valueLiveUpdate="true" width="50px"/>
