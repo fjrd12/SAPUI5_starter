@@ -1,18 +1,12 @@
 <mvc:View controllerName="sap.ui.demo.walkthrough.controller.App" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" displayBlock="true">
-	<Shell>
+	<Shell id="_IDEGen_shell0">
 		<App id='appmain' class="myAppDemoWT">
 			<pages>
 				<Page title="{i18n>homePageTitle}" id='main_page'>
 					<content>
 						<Panel id='Panel1' headerText="{i18n>helloPanelTitle}" class="sapUiResponsiveMargin" width="auto">
 							<content>
-								<VBox>
-									<Input value="{/recipient/name}" valueLiveUpdate="true" width="200px"/>
-									<Input value="{/recipient/lastname}" valueLiveUpdate="true" width="200px"/>
-									<Input value="{/recipient/PO_CODE}" valueLiveUpdate="true" width="200px"/>
-									<Button text="{i18n>showHelloButtonText}" press=".onShowHello" class="myCustomButton"/>
-									<FormattedText htmlText="Hello {/recipient/name}" class="sapUiSmallMargin sapThemeHighlight-asColor myCustomText"/>
-								</VBox>
+									<mvc:XMLView id="_IDEGen_xmlview0" viewName="sap.ui.demo.walkthrough.view.EntryPanel"/>
 							</content>
 						</Panel>
 					</content>
