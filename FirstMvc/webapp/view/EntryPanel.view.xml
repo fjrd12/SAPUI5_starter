@@ -1,12 +1,15 @@
 <mvc:View controllerName="sap.ui.demo.walkthrough.controller.EntryPanel" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc">
-	<VBox id="_IDEGen_vbox0">
-		<Input id="_IDEGen_input0" value="{/recipient/name}" valueLiveUpdate="true" width="200px"/>
-		<Input id="_IDEGen_input1" value="{/recipient/lastname}" valueLiveUpdate="true" width="200px"/>
-		<Input id="_IDEGen_input2" value="{/recipient/PO_CODE}" valueLiveUpdate="true" width="200px"/>
-		<Button id="_IDEGen_button0" text="{i18n>showHelloButtonText}" press=".onShowHello" class="myCustomButton"/>
-		<FormattedText id="_IDEGen_formattedtext0" htmlText="Hello {/recipient/name}" class="sapUiSmallMargin sapThemeHighlight-asColor myCustomText"/>
+	<VBox>
+		<Input value="{/recipient/name}" valueLiveUpdate="true" width="200px"/>
+		<Input value="{/recipient/lastname}" valueLiveUpdate="true" width="200px"/>
+		<Input value="{/recipient/PO_CODE}" valueLiveUpdate="true" width="200px"/>
+		<Button  text="{i18n>showHelloButtonText}" press=".onShowHello" class="myCustomButton"/>
+	
+	
+		<FormattedText htmlText="Hello {/recipient/name}" class="sapUiSmallMargin sapThemeHighlight-asColor myCustomText"/>
         <Button
-         id="helloDialogButton"
+         
+         icon="sap-icon://world"
          text="{i18n>openDialogButtonText}"
          press=".onOpenDialog"
          class="sapUiSmallMarginEnd"/>
