@@ -1,5 +1,5 @@
 <mvc:View controllerName="sap.ui.demo.walkthrough.controller.EntryPanel" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc">
-	<VBox>
+	<VBox class="sapUiResponsiveMargin">
 		<Input value="{/recipient/name}" valueLiveUpdate="true" width="200px"/>
 		<Input value="{/recipient/lastname}" valueLiveUpdate="true" width="200px"/>
 		<Input value="{/recipient/PO_CODE}" valueLiveUpdate="true" width="200px"/>
